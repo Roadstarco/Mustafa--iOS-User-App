@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProgressIndicator" customModule="RoadStar_Customer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ick-t3-nva">
+                    <rect key="frame" x="107" y="348" width="200" height="200"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6du-2x-MAG">
+                            <rect key="frame" x="20" y="51" width="160" height="98"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="lfc-Vq-XWI">
+                                    <rect key="frame" x="50" y="10" width="60" height="60"/>
+                                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="ciD-GY-1gy"/>
+                                        <constraint firstAttribute="width" constant="60" id="hGp-T4-yWs"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="30"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloading Data ..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPX-Q3-Whs" customClass="SecondaryLabel" customModule="PyntailIOS">
+                                    <rect key="frame" x="0.0" y="80" width="160" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="lfc-Vq-XWI" firstAttribute="top" secondItem="6du-2x-MAG" secondAttribute="top" constant="10" id="Evt-Yd-Ai0"/>
+                                <constraint firstAttribute="bottom" secondItem="oPX-Q3-Whs" secondAttribute="bottom" id="J0l-0X-xmB"/>
+                                <constraint firstItem="oPX-Q3-Whs" firstAttribute="leading" secondItem="6du-2x-MAG" secondAttribute="leading" id="JeT-WS-EFB"/>
+                                <constraint firstItem="oPX-Q3-Whs" firstAttribute="top" secondItem="lfc-Vq-XWI" secondAttribute="bottom" constant="10" id="dkU-jy-MPs"/>
+                                <constraint firstAttribute="trailing" secondItem="oPX-Q3-Whs" secondAttribute="trailing" id="vTy-8j-ocZ"/>
+                                <constraint firstItem="lfc-Vq-XWI" firstAttribute="centerX" secondItem="6du-2x-MAG" secondAttribute="centerX" id="vXX-GZ-V9o"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="6du-2x-MAG" secondAttribute="trailing" constant="20" id="ItI-h1-hIJ"/>
+                        <constraint firstItem="6du-2x-MAG" firstAttribute="centerX" secondItem="ick-t3-nva" secondAttribute="centerX" id="JN1-kp-hhu"/>
+                        <constraint firstItem="6du-2x-MAG" firstAttribute="leading" secondItem="ick-t3-nva" secondAttribute="leading" constant="20" id="MIk-sh-rkk"/>
+                        <constraint firstItem="6du-2x-MAG" firstAttribute="centerY" secondItem="ick-t3-nva" secondAttribute="centerY" id="bJp-G6-sZL"/>
+                        <constraint firstAttribute="width" constant="200" id="fHh-aW-vG8"/>
+                        <constraint firstAttribute="height" constant="200" id="uLS-DO-KS1"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ick-t3-nva" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IOs-dT-t0t"/>
+                <constraint firstItem="ick-t3-nva" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LDi-xb-g7y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imgView" destination="lfc-Vq-XWI" id="gje-B6-bYf"/>
+                <outlet property="lblMessage" destination="oPX-Q3-Whs" id="6fn-dT-Wpf"/>
+                <outlet property="mainView" destination="ick-t3-nva" id="hp9-RL-jiR"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="93"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logoIcon" width="396" height="348"/>
+    </resources>
+</document>

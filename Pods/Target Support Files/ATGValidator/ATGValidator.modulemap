@@ -1,0 +1,6 @@
+framework module ATGValidator {
+  umbrella header "ATGValidator-umbrella.h"
+
+  export *
+  module * { export * }
+}
